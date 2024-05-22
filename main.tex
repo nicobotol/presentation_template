@@ -1,0 +1,51 @@
+\documentclass[aspectratio=169]{beamer}
+% \documentclass[aspectratio=169, handout]{beamer} % for handout
+\usepackage{pgfpages}
+\usepackage[english]{babel}
+\usepackage{booktabs,listings}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{upgreek}
+\usepackage{amsmath}
+\lstset{basicstyle=\ttfamily}
+\setlength{\parskip}{.5\baselineskip}
+\usetheme[style=vertical, frametotal=true]{NTNU}
+
+\mode<handout>{%
+    \pgfpagesuselayout{2 on 1}[a4paper] 
+    % \setbeameroption{show notes}
+}
+
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{reference.bib}
+
+\title{Title}
+\subtitle{Subtitle}
+\author{Andreetta Niccolò}
+\date{December $25^{th}$, 800}
+
+\begin{document}
+  \maketitle
+
+  \begin{frame}[fragile]{Outline}
+    \tableofcontents
+  \end{frame}
+
+  \section{Introduction}
+  \begin{frame}{First slide}{\insertsection}
+    Prova
+    \textcolor{NTNUBlue}{Ciao}
+    \textcolor{NTNUgreen}{Ciao}
+    \textcolor{NTNULightblue}{Ciao}
+    \textcolor{NTNUOrange}{Ciao}
+    \textcolor{NTNUPink}{Ciao}
+    \textcolor{NTNUYellow}{Ciao}
+    \textcolor{NTNUViolet}{Ciao}
+    \textcolor{NTNUCyan}{Ciao}
+    \textcolor{NTNUOcher}{Ciao}
+    \textcolor{LightGrey}{Ciao}
+  \end{frame}
+
+\end{document}
